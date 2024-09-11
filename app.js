@@ -18,7 +18,7 @@ let adress = "Cra 96A No 73 - 39 Alamos Norte";
 console.log(numero1);
 
 // Operaciones basicas munecura
-
+/*
 let suma = numero1 + numero2;
 let resta = numero1 - numero2;
 let multiplicacion = numero1 * numero2;
@@ -31,6 +31,7 @@ console.log(`LA RESTA DE ${numero1} Y ${numero2} ES ${resta}`);
 console.log(`LA MULTIPLICACION DE ${numero1} Y ${numero2} ES ${multiplicacion}`);
 console.log(`LA DIVISION DE ${numero1} Y ${numero2} ES ${division}`);
 console.log(`LA DIVISION MODULO DE ${numero1} Y ${numero2} ES ${mod}`);
+*/
 
 
 // Ingreso de data por el usuario
@@ -63,7 +64,7 @@ if (edad >= 18){
 */
 
 
-//EJERCICIO 2 LA CALIFICACION
+//EJERCICIO 2 LA CALIFICACION Sept 10 
 /*
 let calificacion;
 
@@ -76,7 +77,7 @@ if(calificacion < 3.0){
 }
 */
 
-//EJERCICIO 3 LA CALIFICACION
+//EJERCICIO 3 LA CALIFICACION Sept 10
 /*
 let calificacion;
 
@@ -91,8 +92,9 @@ if(calificacion < 3.0){
 }
     */
 
-//QUE GENERACION ERES
+//QUE GENERACION ERES Sept 10
 
+/*
 let generacion;
 
 generacion = parseFloat(prompt("EN QUE ANO NACIO PARCERITO?"));
@@ -116,3 +118,76 @@ if(generacion <= 1900){
 }else{
     console.log("NO CORRESPONDE...");
 }
+    */
+
+
+
+// Estructura Codifo Switch keys Sept 11
+/*
+let dia=2;
+
+switch(dia){
+    case 1: console.log("Imprimir lunes");
+    break;
+
+    case 2: console.log("Imprimir Martes");
+    break;
+
+    case 3: console.log("Imprimir Miercoles");
+    break;
+
+    case 4: console.log("Imprimir Miercoles");
+    break;
+
+    case 5: console.log("Imprimir Jueves");
+    break;
+
+    case 6: console.log("Imprimir Viernes");
+    break;
+
+    default: console.log("Dia no existe");
+
+}
+    */
+
+// Prctica: Conversor de Divisas Dolar $4280 Euro $4728 Libra $5601
+
+let dolar=4280;
+let euro=4728;
+let libra=5601;
+
+cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
+
+totaldolar = cantidad / dolar;
+console.log(totaldolar);
+
+totaleuro = cantidad / euro;
+console.log(totaleuro);
+
+totallibra = cantidad / libra;
+console.log(totallibra);
+
+
+/*
+switch(cantidad){
+
+    case 1: totaldolar = cantidad * dolar;
+    console.log(totaldolar);
+    break
+
+    case 2: totaleuro = cantidad * euro;
+    consoles.log(totaleuro);
+    break
+
+    case 3: totallibra = cantidad * libra;
+    console.log(totallibra);
+    break;
+
+}
+    */
+
+
+
+
+
+
