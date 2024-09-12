@@ -151,40 +151,71 @@ switch(dia){
     */
 
 // Prctica: Conversor de Divisas Dolar $4280 Euro $4728 Libra $5601
-
+/*
 let dolar=4280;
 let euro=4728;
 let libra=5601;
 
 cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
 
-totaldolar = cantidad / dolar;
-console.log(totaldolar);
-
-totaleuro = cantidad / euro;
-console.log(totaleuro);
-
-totallibra = cantidad / libra;
-console.log(totallibra);
-
-
-/*
-switch(cantidad){
-
-    case 1: totaldolar = cantidad * dolar;
+    totaldolar = cantidad / dolar;
     console.log(totaldolar);
-    break
 
-    case 2: totaleuro = cantidad * euro;
-    consoles.log(totaleuro);
-    break
+    totaleuro = cantidad / euro;
+    console.log(totaleuro);
 
-    case 3: totallibra = cantidad * libra;
+    totallibra = cantidad / libra;
     console.log(totallibra);
-    break;
 
-}
     */
+
+
+    // Ejercicio de cambio de divisa Sept 11
+
+    let cantidad = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
+    let opcion = prompt("Seleccione la moneda a convertir: \n1. Euro (EUR) \n2. Dolar (USD) \n3. Libra esterlina (GBP)");
+    let TASA_DOLAR = 4280;
+    let TASA_EURO = 5728;
+    let TASA_LIBRA = 4728;
+
+
+    // Solicitar la cantidad a convertir 
+
+
+    switch(opcion){
+        case "1":
+        let euros = cantidad / TASA_EURO;
+        console.log(euros);
+        break;
+
+        case "2":
+        let dolares = cantidad / TASA_DOLAR;
+        console.log(dolares);
+        break;
+
+        case " 3":
+        let libras = cantidad / TASA_LIBRA;
+        console.log(libras);
+        break;
+
+        default:
+        console.log("opcion invalidad");
+        break;
+
+    }
+
+// Tabla de Multiplicar del 4 * 10 
+/*
+let tabla = 4;
+
+for (let i = 1; i<=10; i++){
+    console.log(`${tabla} * ${i} = ${tabla * i}`);
+}
+
+console.log("-----------------------------------------")
+*/
+
+
 
 
 
