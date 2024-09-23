@@ -301,7 +301,6 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
             break;
         default:
             estacion = "desconocida";
-
     }
             */
 
@@ -324,7 +323,7 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
     let estado = true;
     let coseno, seno, raiz, numero;
 
-    // opciones realizar un calculo matematic
+    // opciones realizar un calculo matematico
 
     // 1. Raiz
     // 2. Seno
@@ -378,13 +377,14 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
 
 
     //Adivina divina
-
+    /*
     let num1 = Math.floor(Math.random() * 50) + 1;
     let num2; //numero que se le pregunta al cristiano...
     
     for(let i = 1; i <= 3; i++){ //Aqui son solo 3 intentos...
 
-    while(true){
+    while(true){ //Aca esta la adivinanza...
+
 
         num2 = (parseFloat(prompt(`ADIVINA DIVINA....INGRESA UN NUMERO ENTRE EL 1 Y EL 50`)));
  
@@ -402,6 +402,7 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
 
     }
     }
+    */
 
     // por chat gpt pero no entendi...
     /*
@@ -434,6 +435,242 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
         // Inicia el juego
         adivinarNumero();
         */
+    
+
+    //  Areas de las figuras Sep 19 
+    /*
+    let ac, acu, at;
+    let r, lado, b , h;
+    const pi = 3.1416;
+    let opcion;
+
+    opcion = parseInt(prompt(`1. Area Circulo \n 2. Area del Cuadrado \n 3. Area del Triangulo \n 4. Salir`));
+    while(opcion != 4){
+    switch(opcion){
+
+
+    case 1: alert("Area del circulo");
+    // A = pi * r*r
+    r = parseFloat(prompt("Ingrese el valor del radio"));
+    ac = pi * (r*r);
+    alert(`El area del circulo es: ${ac}`);
+    break;
+
+    case 2: alert("Area del cuadrado");
+    // A = lado * lado
+    lado = parseFloat(prompt("Ingrese el valor del lado"));
+    acu = (lado*lado);
+    alert(`El area del cuadrado es: ${acu}`);
+    break;
+
+    case 3: alert("Area del triangulo");
+    // A = B*H/2
+    b = parseFloat(prompt("Ingrese el valor de la base"));
+    h = parseFloat(prompt("Ingrese el valor de la altura"));
+    at = (b*h)/2;
+    alert(`El area del triangulo es: ${at}`);
+    break;
+
+    case 4:
+    alert("SALIENDO.....");
+    //estado = false;
+    break;
+
+    default: 
+    alert("Opcion no valida");
+
+    }
+
+    opcion = parseInt(prompt(`1. Area Circulo \n 2. Area del Cuadrado \n 3. Area del Triangulo \n 4. Salir`));
+
+}
+    */
+
+
+    //  conversor de temperaturas
+
+    //do while ///// falta resolverlo
+    /*
+    let c; // celsius
+    let f; //fharenheit
+    let k; //kelvin
+
+    let ck, fk, at, kf, kc, fc;
+
+    let opcion;
+    let estado = true;
+
+    do{
+
+    opcion = parseInt(prompt(`1. kelvin a celsius \n 2. kelvin a fharengheit \n 3. fharenheit a celsius \n 4. fharenheit a kelvin \n 5. celsius a kelvin \n 6. celsius a fharenheit \n 7 salir del conversor `));
+    
+    switch(opcion){
+
+
+    case 1: alert("kelvin a celsius");
+    
+    k = parseFloat(prompt("Ingrese el valor de la temperatura en kelvin"));
+    ck = k-273.15;  
+    alert(`la temperatura en celsius es: ${ck}`);
+    break;
+
+    case 2: alert("kelvin a fharengheit");
+    k = parseFloat(prompt("Ingrese el valor de la temperatura en kelvin"));
+    fk = 9*(k-273.15)/5+32;
+    alert(`la temperatura en fharengheit es: ${fk}`);
+    break;
+
+    case 3: alert("fharenheit a celsius");
+    f = parseFloat(prompt("Ingrese el valor de la temperatura en fharenheit"));
+    at = (f*h)/2;
+    alert(`la temperatura en celsius es: ${fk}`);
+    break;
+
+    case 4: alert("fharenheit a kelvin");
+    f = parseFloat(prompt("Ingrese el valor de la temperatura en fharenheit"));
+    kf = 5(f-32)/9+273;
+    alert(`la temperatura en kelvin es: ${kf}`);
+    break;
+
+    case 5: alert("celsius a kelvin");
+    c = parseFloat(prompt("Ingrese el valor de la temperatura en celsius"));
+    kc = c+273.15;
+    alert(`la temperatura en kelvin es: ${kc}`);
+    break;
+
+    case 6: alert("celsius a fharenheit");
+    c = parseFloat(prompt("Ingrese el valor de la temperatura en celsius"));
+    fc = 9*c/5+32;
+    alert(`la temperatura en fharenheit es: ${fc}`);
+
+    case 7:
+        break;
+
+
+    default: 
+    alert("Opcion no valida");
+
+    }
+
+    }while(estado);
+
+    */
+
+    // Sept 20
+    /*
+    // Solicitar un número entero al usuario / este ejercicio esta bien...
+    let num = parseInt(prompt("Ingrese un número entero para y dibuje el triángulo:"));
+    // la variable num es el numero ingresado por el usuario
+    // Validar si el número ingresado es positivo
+    if (num > 0) {
+    // Bucle para dibujar el triángulo, el if me dice que el numero sea positivo
+    for (let i = 1; i <= num; i++) {
+    console.log('*'.repeat(i)); // Imprimir i asteriscos en la línea
+    }
+    } else {
+    console.log("Por favor no se haga el que no entiende..., ingrese un número pero que sea entero positivo.");
+    }
+    */
+
+
+        //Sept 23 
+
+        //Crea un script que pida al usuario una contraseña. 
+        // Si coincide con la clave definida en el script le devolverá el siguiente 
+        //mensaje "Acceso concedido" de lo contrario le devolverá el mensaje "Acceso Denegado". 
+        //Si falla tres veces se visualizará el mensaje "Alerta, intruso tratando de acceder…"
+
+        /*
+        let clave = null;
+        let intento = 0;
+        let passw = "Talento";
+        while (clave != passw && intento < 3){
+        clave = prompt("Teclee su clave");
+        if (clave == passw){
+         alert("Acceso concedido..");
+        }
+        else{
+         alert("Acceso denegado..");
+        intento++;
+        }
+        }
+        if (intento == 3){
+        alert("Alerta Intruso tratando de acceder");
+        }
+        */
+
+        //Implementa un script haciendo uso de “do..while()” para crear una cadena que
+        //contenga letras repetidas. Las letras se digitan por teclado y sólo podrán ser la
+        //X o la Z, después de elegir las letras se le ingresa el número de repeticiones que
+        //deberá estar entre 1 y 15.
+
+        //Ejemplo: Si elijo X y luego digito 10 se mostrará XXXXXXXXXX. Si digito
+        //una letra diferente me volverá a pedir la letra, y si tecleo 20 me
+        //volverá a pedir el número
+
+        /*
+        let letra=null, veces=0, cad="";
+        do{
+        letra = prompt("¿Qué letra desea X o la Z?");
+        }while (letra != 'X' && letra != "Z");
+        do{
+        veces = parseInt(prompt("¿Cuantas repeticiones (1-15)?"));
+        }while (veces <1 || veces > 15)
+        do{
+        cad+=letra;
+        veces--;
+        }while (veces>0);
+        alert(cad);
+        */
+
+    // Solicitar la cantidad a convertir y generar funciones
+     // Ejercicio de cambio de divisa Sept 23
+
+    let cantidad = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
+    let opcion = prompt("Seleccione la moneda a convertir: \n1. Euro (EUR) \n2. Dolar (USD) \n3. Libra esterlina (GBP)");
+    const TASA_DOLAR = 4280;
+    const TASA_EURO = 5728;
+    const TASA_LIBRA = 4728;
+
+    // Solicitar la cantidad a convertir 
+
+    switch(opcion){
+        case 1:
+        console.log(euros);
+        alert(`EL VALOR INICIAL ES: ${(cantidad)} y la conversion es ${euros(cantidad)}`)
+        break;
+
+        case 2:
+        console.log(dolares);
+        alert(`EL VALOR INICIAL ES: ${(cantidad)} y la conversion es ${dolares(cantidad)}`)
+        break;
+
+        case 3:
+        console.log(libras);
+        alert(`EL VALOR INICIAL ES: ${(cantidad)} y la conversion es ${libras(cantidad)}`)
+        break;
+
+        default:
+        alert("opcion invalida");
+
+        }
+
+        // Generar la funcion por cada caso
+
+        function dolares(cantidad) {
+        return cantidad / TASA_DOLAR;
+        }
+
+        function euros(cantidad){
+        return cantidad / TASA_EURO;
+        }
+
+        function libras(cantidad){
+        return cantidad / TASA_LIBRA;
+        }
+
+    
+
 
 
 
