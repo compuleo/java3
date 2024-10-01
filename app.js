@@ -625,7 +625,7 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
 
     // Solicitar la cantidad a convertir y generar funciones
      // Ejercicio de cambio de divisa Sept 23
-
+     /*
     let cantidad = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
     let opcion = prompt("Seleccione la moneda a convertir: \n1. Euro (EUR) \n2. Dolar (USD) \n3. Libra esterlina (GBP)");
     const TASA_DOLAR = 4280;
@@ -633,7 +633,7 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
     const TASA_LIBRA = 4728;
 
     // Solicitar la cantidad a convertir 
-
+    
     switch(opcion){
         case 1:
         console.log(euros);
@@ -668,6 +668,438 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
         function libras(cantidad){
         return cantidad / TASA_LIBRA;
         }
+        */
+
+        //Contrasena con el teacher Fabian
+        //Ciclo de pregunta e intentos
+        /*
+        function login(){
+        while(intento < 3){
+            clave = prompt("Digite su clave de acceso");
+            if(clave == passw){
+            alert("paso chino!...");
+            break;
+        }else{
+            //Sino paila...
+            alert("paila pelado");
+            intento ++ ;
+        }
+        }
+
+            //Sino se cumplen la condiciones...
+        if(intento == 3){
+            alert("Hoy no se puede mano...");
+        }
+        }
+
+            //Variables
+            let clave = null;
+            let passw = "Talento";
+            let intento = 0;
+            login();
+        */
+
+        // SEPT 24
+        // ARREGLOS
+        /*
+
+        let estudiantes = ["Laura", "Julian", "Andres", "Oscar", "Paola"];
+        console.log(estudiantes)
+
+        // Añadir un elemento al final 
+        console.log(estudiantes.push("Ricardo"));
+        console.log(estudiantes)
+
+        // Agrego elementos al inicio
+        console.log(estudiantes.unshift("Esmeralda"));
+        console.log(estudiantes)
+
+        // Añadir elementos en alguna posicion
+        console.log(estudiantes.splice(2, 1));
+        console.log(estudiantes)
+
+        // Eliminar ultimo
+        console.log(estudiantes.pop());
+        console.log(estudiantes)
+
+        // Eliminar el primer elemento
+        console.log(estudiantes.shift());
+        console.log(estudiantes)
+
+        // Posicion de un elemento
+        console.log(estudiantes.indexOf("Andres"));
+        console.log(estudiantes)
+
+        // Recorrer el arreglos
+        // op 1
+        estudiantes.forEach((est) =>{
+        console.log(est);
+        });
+        */
+
+        //sept 25
+        /*
+        let vector = [];
+        // Recorrer para llenarlo
+
+        //posiciones del arreglo
+        for(let i = 0; i < 5; i++){
+
+            vector.push(i + 1);
+
+        }
+        //mostrar el arreglo
+        for(let i = 0; i < 5 ; i++){
+
+            console.log(vector[i]);
+
+        }
+        */
+
+        //Sumar los numeros del arreglo
+        /*
+        let numeros = [12,23,18,16,19];
+        let suma = 0;
+
+        for(let i = 0; i < numeros.length; i++){
+
+            suma += numeros[i];
+
+        }
+
+        console.log(`LA SUMA ES: ${suma}`);
+        */
+
+        //
+        /*
+        let numeros = [12, 23, 18, 16, 19];
+        */
+        /*
+        let sumaimpar = 0;
+        let sumapar = 0;
+
+        for(let i = 0; i < numeros.length; i++) {
+
+        if(numeros[i] % 2 === 0) {
+        sumapar += numeros[i]; // Si es par, suma a 'sumapar'
+        } else {
+        sumaimpar += numeros[i]; // Si es impar, suma a 'sumaimpar'
+        }
+        }
+
+        console.log(`LA SUMA IMPAR ES: ${sumaimpar}`);
+        console.log(`LA SUMA PAR ES: ${sumapar}`);
+
+        //Cual es el mayor numero
+
+        let mayorNumero = Math.max(...numeros);
+        console.log(`El número mayor es: ${mayorNumero}`);
+
+        //Cual es el menor numero
+
+        let menorNumero = Math.min(...numeros);
+        console.log(`El número menor es: ${menorNumero}`);
+
+        // Solucion esperando la logica
+        // Crear un arreglo con numeros aleatorio
+        */
+        /*
+        let numeroMayor = numeros[0];
+        let numeroMenor = numeros[0];
+
+
+        for(let i = 0; i < numeros.length; i++){
+            if (numeros[i] > numeroMayor)}{
+                numeroMayor = numeros[i];
+            } else if (numeros[i] < numeroMenor){
+                numeroMenor = numeros[i];
+            }
+        }
+
+        console.log("El numero mayor es:", numeroMayor);
+        console.log("El numero menor es:", numeroMenor);
+        */
+
+        /*
+        
+        let tamanio = parseInt(prompt("Ingrese la cantidad de estudiantes"));
+        let calificaciones = new Array(tamanio);
+        let sumar = 0;
+        //let cont = 0;
+
+        for (let i = 0; i < calificaciones.length; i++){
+
+        calificaciones[i] = parseFloat(prompt("Ingrese las notas"));
+
+        }
+
+        console.log(`LA SUMA DE LAS CALIFICACIONES ES ${sumar}`);
+        console.log(`EL PROMEDIO DE LAS CALIFICACIONES ES ${sumar/tamanio}`);
+
+        for(let i = 0; i < calificaciones.length; i++){
+        // cont++;
+        console.log(`Calificacion ${i+1} : ${calificaciones[i]}`);
+        }
+
+        */
+
+    //SEPT 27 REPASO
+
+    //El Director Comercial de un Supermercado de la ciudad le ha solicitado
+    //desarrollar un código en JavaScript para los puntos de caja del Super. La
+    //funcionalidad del Script es imprimir cada uno de los productos que el
+    //cajero ira facturando en caja, su precio y calcular el total a pagar.
+    //Desarrolla el código con las siguientes características:
+    //-Que tenga una función caja() que solicite al usuario nombre y precio de cada
+    // producto.
+    //-Una variable total que vaya sumando el precio de los artículos
+    //Una función adicional llamada imprimaProducto(prod, prec, tot_art) que reciba como
+    //parámetros el nombre del producto, precio de cada producto, total de artículos para
+    //imprimirlos o mostrar por consola.
+    //-Que le pregunte al usuario si desea seguir facturando más artículos. Si no desea,
+    //el programa debe detenerse y mostrar los productos facturados y total de la factura.
+    //-Si no hay más artículos, que imprima el total de la compra realizada.
+    //-Al finalizar el desarrollo de tu código, puedes simplement
+    //Al finalizar el desarrollo de tu código, puedes simplemente llamar a la función
+    //caja() para probar la funcionalidad del codigo.
+    //zpu-rkxy-ozp
+
+
+    //inicial  variables y arreglos
+    /*
+    function imprimaProducto(prod, preci, tot_art){
+        //mostrar los que compro -nombre -precio y -total
+     for(let i=0; i < tot_art; i++){
+        console.log(`Producto ${prod[i]} : Precio: ${prec[i]}`)
+     }
+     
+
+    let productos = new Array(10);
+    let precios = new Array(10);
+    let cant = 0;
+
+    function caja(){
+        let total_fact = 0;
+
+        // Solicitar el nombre del producto y su precio
+        for(let i=0; i<productos.length; i++){
+            //Pedir productos
+            let nombre = prompt("Ingrese nombre del producto...")
+            let precio = parseInt(prompt("Ingrese el precio del producto..."))
+
+            productos[i] = nombre;
+            precios[i] = precio;
+            cant++;
+
+            //Sumar los precios de los productos
+            total_fact += precio;
+
+            //Preguntar al usuario si desea continuar
+            masArticulos = confirm("Desea seguir agragando mas articulos....")
+
+            if(masArticulos ==false){
+                imprimaProducto(productos, precios, cant);
+                break;
+            }
+
+            
+        }
+
+        
+
+        }
+        console.log(`Total a pagar: ${total_fact}`);
+        
+        }
+        */
+
+        //objetos
+        /*
+        class Persona{
+
+            constructor(nombre, edad){
+        
+                this._nombre = nombre;
+                this._edad = edad;
+        
+            }
+        
+        
+            get nombre(){
+                return this._nombre;
+            }
+        
+            set nombre(nombre){
+                this._nombre = nombre;
+            }
+        
+            get edad(){
+                return this._edad;
+            }
+        
+            set edad(edad){
+                this._edad = edad;
+            }
+        
+        
+            saludar(){
+                console.log(Hola soy ${this._nombre} Y TENGO ${this._edad} años);
+            }
+        
+        
+        
+        
+        }
+        
+        const per1  = new Persona("Juan", 25);
+        
+        per1.saludar();
+        
+        const per2 = new Persona("Andres", 28);
+        
+        
+        per1.nombre = "Lorena";
+        
+        
+        per2.edad = 45;
+        
+        
+        per1.saludar();
+        
+        per2.saludar();
+        */
+
+        //OCT 1
+        /*
+        class Libro{
+
+            constructor(titulo, autor, paginas){
+        
+                this._titulo = titulo;
+                this._autor = autor;
+                this._paginas = paginas;
+        
+            }
+        
+        
+            get titulo(){
+                return this._titulo;
+            }
+        
+            set titulo(titulo){
+                this._titulo = titulo;
+            }
+        
+            get autor(){
+                return this._autor;
+            }
+        
+            set autor(autor){
+                this._autor = autor;
+            }
+        
+            get paginas(){
+                return this._paginas;
+            }
+        set paginas(paginas){
+                this._paginas = paginas;
+            }
+        
+        
+            mostarInfo(){
+        
+                console.log(`El titulo del libro es: ${this._titulo} el autor es: ${this._autor} y tiene ${this._paginas} Paginas`);
+        
+            }
+        
+        
+        }
+        
+        
+        const l1 = new Libro("El relato de un naufrado", "Pepito", "230");
+        const l2 = new Libro("EL principito", "Jorge", "180");
+        const l3 = new Libro("EL Programador", "Lucia", "430");
+        const l4 = new Libro("Cien Anos de Soledad", "1200");
+        
+        console.log(l1.titulo)
+        console.log(l2.titulo)
+        console.log(l3.titulo)
+        console.log(l4.titulo)
+
+        l1.autor = "Carlos";
+        l2.autor = "Pablo";
+        l3.autor = "Ana";
+        l4.autor = "Gabriel Garcia Marquez";
+        
+        l1.mostarInfo()
+        l2.mostarInfo()
+        l3.mostarInfo()
+        */
+
+        //Produtos
+        class Producto{
+
+            constructor(nombre,precio,cantidad){
+                this._nombre = nombre;
+                this._precio = precio;
+                this._cantidad = cantidad
+            }
+        
+        
+            get nombre(){
+                return this._nombre;
+            }
+        
+            set nombre(nombre){
+                this._nombre = nombre;
+            }
+        
+            get precio(){
+                return this._precio;
+            }
+        
+            set precio(precio){
+                this._precio = precio;
+            }
+        
+            get cantidad(){
+                return this._cantidad;
+            }
+        
+            set cantidad(cantidad){
+                this._cantid
+        }
+        
+        
+            mostrarNombreProducto(){
+                console.log(`El nombre del producto es: ${this._nombre}, el precio es: ${this._precio} y la cantidad es: ${this._cantidad}`);
+            }
+        
+        
+            valorTotal(){
+                return this._precio * this._cantidad;
+            }
+        modificarCantidad(nuevoCantidad){
+        
+                this._cantidad = nuevoCantidad;
+        
+                console.log(`La nueva cantidad es: ${this._cantidad}`)
+        
+            }
+        
+        
+        }
+        
+        const prod1 = new Producto("Mouse", 45000, 5);
+        const prod2 = new Producto("Monitor", 1450000, 3);
+        
+        prod1.mostrarNombreProducto();
+        prod2.mostrarNombreProducto();
+        zpu-rkxy-ozp
+
+
+
+
 
     
 
