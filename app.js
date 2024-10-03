@@ -1036,7 +1036,8 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
         l3.mostarInfo()
         */
 
-        //Produtos
+        //Produtos OCT 1 
+        /*
         class Producto{
 
             constructor(nombre,precio,cantidad){
@@ -1044,7 +1045,6 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
                 this._precio = precio;
                 this._cantidad = cantidad
             }
-        
         
             get nombre(){
                 return this._nombre;
@@ -1075,18 +1075,16 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
                 console.log(`El nombre del producto es: ${this._nombre}, el precio es: ${this._precio} y la cantidad es: ${this._cantidad}`);
             }
         
-        
             valorTotal(){
                 return this._precio * this._cantidad;
             }
-        modificarCantidad(nuevoCantidad){
+            modificarCantidad(nuevoCantidad){
         
                 this._cantidad = nuevoCantidad;
         
                 console.log(`La nueva cantidad es: ${this._cantidad}`)
         
             }
-        
         
         }
         
@@ -1096,17 +1094,186 @@ cantidad = parseFloat(prompt("Ingrese el dinero disponible"));
         prod1.mostrarNombreProducto();
         prod2.mostrarNombreProducto();
         zpu-rkxy-ozp
+        */
 
 
+        //Productos
+        /*
+        class Producto{
 
+            constructor(nombre,precio,cantidad){
+        
+                this._nombre = nombre;
+                this._precio = precio;
+                this._cantidad = cantidad
+            }
+        
+        
+            get nombre(){
+                return this._nombre;
+            }
+        
+            set nombre(nombre){
+                this._nombre = nombre;
+            }
+        
+            get precio(){
+                return this._precio;
+            }
+        
+            set precio(precio){
+                this._precio = precio;
+            }
+        
+            get cantidad(){
+                return this._cantidad;
+            }
+        set cantidad(cantidad){
+                this._cantidad = cantidad;
+            }
+        
+        
+            mostrarNombreProducto(){
+                console.log(`El nombre del producto es: ${this._nombre}, el precio es: ${this._precio} y la cantidad es: ${this._cantidad}`);
+            }
+        
+        
+            valorTotal(){
+              
+                return this._precio * this._cantidad;
+            }
+        
+        
+            modificarCantidad(nuevoCantidad){
+        
+                this._cantidad = nuevoCantidad;
+        
+                console.log(`La nueva cantidad es: ${this._cantidad}`)
+        
+            }
+            anadirStock(nuevoCantidad){
+        
+                return this._cantidad += nuevoCantidad;
+            }
+        
+            venderStock(nuevoCantidad){
+                this._cantidad -= nuevoCantidad;
+            }
+        
+        
+            operacion(){
+               
+               let nCantidad = parseFloat(prompt('Ingrese la nueva cantidad'));
+        
+                 let op = parseInt(prompt("Ingrese que tipo de operacion desea realizar 1. Añadir 2. Restar"));
+        
+                 if(op===1){
+                    console.log(prod3.anadirStock(nCantidad));
+            
+                }else{
+        
+                 console.log(prod3.venderSt
+                }else{
+        
+                 console.log(prod3.venderStock(nCantidad));
+                }
+                }
+        
+        
+            static crearProducto(){
+                let productos; 
+                let precios; 
+                let cantidades;
+        do{
+                productos = prompt('Ingrese el nombre del producto');
+                }while();
+        
+                precios = parseFloat(prompt('Ingrese el precio del producto'));
+        
+                cantidades = parseFloat(prompt('Ingrese la cantidad del producto'));
+        
+                return new Producto(productos, precios, cantidades);
+            }
+        
+        
+        
+        }
+        
+        const prod1 = new Producto("Mouse", 45000, 5);
+        const prod2 = new Producto("Monitor", 1450000, 3);
+        
+        
+        const prod3 = Producto.crearProducto();
+        
+        
+        prod1.mostrarNombreProducto();
+        prod2.mostrarNombreProducto();
+        prod3.mostrarNombreProducto();
+        
+        console.log(` El valor del producto 1 es: ${prod1.valorTotal()}`);
+        console.log(` El valor del producto 2 es: ${prod2.valorTotal()}`);
+        console.log(` El valor del producto 3 es: ${prod3.valorTotal()}`);
+        prod3.operacion();
+        
+        
+        prod1.modificarCantidad(8);
+        prod2.modificarCantidad(6);
+        //prod3.modificarCantidad(nCantidad);
+        
+        
+        prod1.mostrarNombreProducto();
+        prod2.mostrarNombreProducto();
+        prod3.mostrarNombreProducto();
+        
+        console.log(` El valor del producto 1 es: ${prod1.valorTotal()}`);
+        console.log(` El valor del producto 2 es: ${prod2.valorTotal()}`);
+        console.log(` El valor del producto 3 es: ${prod3.valorTotal()}`);
+        */
 
+        //OCT 3
+        //Crea una clase Termostato que tenga los atributos temperatura y estado (encendido o apagado).
+        //Debe tener métodos para subir la temperatura, bajar la temperatura, encender y apagar el termostato, y mostrar el estado actual.
 
+        //Crear los objetos
+        //temperatura del termostato
+        //estado = encendido o apagado
+        //estado actual del termostato
+
+        constructor(temperatura,estado,actual){
+        
+            this._temperatura = temperatura;
+            this._estado = estado;
+            this._actual = actual;
+        }
+
+        get temperatura(){
+            return this._temperatura;
+        }
     
+        set temperatura(temperatura){
+            this._temperatura = temperatura;
+        }
 
+        //
 
+        get estado(){
+            return this._estado;
+        }
+    
+        set estado(estado){
+            this._estado = estado;
+        }
 
+        //
 
+        get actual(){
+            return this._actual;
+        }
+    
+        set actual(actual){
+            this._actual = actual;
+        }
 
+        //
 
-
-
+        
